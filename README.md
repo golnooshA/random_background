@@ -16,7 +16,7 @@ This project uses [`solid_lints`](https://pub.dev/packages/solid_lints) to perfo
 
 ## 🎬 Demo
 
-<img src="assets/screens/test.gif" width="300" alt="App demo" />
+<img src="assets/screenshots/test.gif" width="300" alt="App demo" />
 
 ---
 
