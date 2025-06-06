@@ -25,24 +25,30 @@ class _RandomBackgroundPageState extends State<RandomBackgroundPage> {
     'assets/images/img_10.jpg',
   ];
 
+  int randomInt(int max) => Random().nextInt(max);
+
   bool showImage = false;
 
-   int maxColorValue = 256;
-   int opacityValue = 255;
+  int maxColorValue = 256;
+  int opacityValue = 255;
+
+  void setRandomColor() {
+    backgroundColor = Color.fromARGB(
+      opacityValue,
+      randomInt(maxColorValue),
+      randomInt(maxColorValue),
+      randomInt(maxColorValue),
+    );
+  }
+
+  void setRandomImage() {
+    currentImage = imageList[randomInt(imageList.length)];
+  }
 
   void changeBackground() {
     setState(() {
       showImage = Random().nextBool();
-      if (showImage) {
-        currentImage = imageList[Random().nextInt(imageList.length)];
-      } else {
-        backgroundColor = Color.fromARGB(
-          opacityValue,
-          Random().nextInt(maxColorValue),
-          Random().nextInt(maxColorValue),
-          Random().nextInt(maxColorValue),
-        );
-      }
+      showImage ? setRandomImage() : setRandomColor();
     });
   }
 
