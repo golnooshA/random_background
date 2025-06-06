@@ -13,7 +13,7 @@ A simple Flutter application that displays the text **"Hello there"** in the cen
 ## Static Code Analysis
 
 - This project uses [`solid_lints`](https://pub.dev/packages/solid_lints) to perform static code analysis. All issues reported by the linter have been fixed to ensure clean and maintainable code.
-- [`include: package:solid_lints/analysis_options.yaml`] added to [`analysis_options.yaml`]. It saves time and ensures consistent, high-quality code.
+- The [`include: package:solid_lints/analysis_options.yaml`] is added to [`analysis_options.yaml`]. It saves time and ensures consistent, high-quality code.
 
 ## 🎬 Demo
 
